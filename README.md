@@ -1,1 +1,3 @@
-# Test-task-Luxe-Quality-
+npm install
+
+npm start
