@@ -1,0 +1,42 @@
+@use './mixins' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.form-style {
+  @include flex-box(column, initial, 20);
+}
+
+.container-choose-photo {
+  @include flex-box(column, initial, 10)
+}
+
+.input-style {
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  width: 103px;
+
+  &:hover {
+    background: darken($color: #ffff, $amount: 10)
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
