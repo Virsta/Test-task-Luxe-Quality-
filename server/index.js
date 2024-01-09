@@ -7,9 +7,16 @@ const fs = require('fs');
 const multer = require('multer');
 const opencage = require('opencage-api-client');
 const axios = require('axios');
+const path = require('path');
+
 
 const app = express();
 const port = 5000;
+
+app.use(express.static(path.join(__dirname, '../test-task/build')));
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../test-task/build', 'index.html'));
+});
 
 app.use(cors());
 app.use(express.json());

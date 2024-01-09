@@ -2,6 +2,7 @@
   "name": "test-task",
   "version": "0.1.0",
   "proxy": "http://localhost:5000",
+  "homepage": "https://github.com/Virsta/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -17,6 +18,7 @@
     "axios": "^1.6.5",
     "buffer": "^6.0.3",
     "formik": "^2.4.5",
+    "gh-pages": "^6.1.1",
     "leaflet": "^1.9.4",
     "leaflet-geosearch": "^3.11.0",
     "mongodb": "^6.3.0",
@@ -36,7 +38,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
